@@ -1545,6 +1545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 1R Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1712686611437885335, guid: f58bdb5a3a52d614e85866dfe30181de, type: 3}
+      propertyPath: m_TagString
+      value: IsRoom
+      objectReference: {fileID: 0}
     - target: {fileID: 8008709236619782326, guid: f58bdb5a3a52d614e85866dfe30181de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20

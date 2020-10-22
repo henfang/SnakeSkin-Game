@@ -9,6 +9,7 @@ TagManager:
   - ItemSpawnPoint
   - RoomObjects
   - Walls
+  - IsRoom
   layers:
   - Default
   - TransparentFX
