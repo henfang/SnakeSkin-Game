@@ -30,7 +30,8 @@ public class ObjectSpawner : MonoBehaviour
         if (itemID == 2)
         {
             rand = Random.Range(0, objectTemplates.roomObjects.Length);
-            Instantiate(objectTemplates.roomObjects[rand], transform.position, objectTemplates.roomObjects[rand].transform.rotation);
+            GameObject obj = Instantiate(objectTemplates.roomObjects[rand], transform.position, objectTemplates.roomObjects[rand].transform.rotation);
+            obj.AddComponent<BoxCollider2D>();
         }
         if (spawned == false)
         {
