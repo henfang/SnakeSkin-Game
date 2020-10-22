@@ -2059,6 +2059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 1L Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6530063433247810534, guid: e5ff16bf70525e8438df72a1673d532d, type: 3}
+      propertyPath: m_TagString
+      value: IsRoom
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ff16bf70525e8438df72a1673d532d, type: 3}
 --- !u!4 &5188410059598773447 stripped
