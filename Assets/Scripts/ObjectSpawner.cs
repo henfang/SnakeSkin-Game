@@ -39,7 +39,8 @@ public class ObjectSpawner : MonoBehaviour
             if (itemID == 1 && spawnNumber <= 5)
             {
                 rand = Random.Range(0, objectTemplates.roomTiles.Length);
-                Instantiate(objectTemplates.roomTiles[rand], transform.position, objectTemplates.roomTiles[rand].transform.rotation);
+                GameObject obj = Instantiate(objectTemplates.roomTiles[rand], transform.position, objectTemplates.roomTiles[rand].transform.rotation);
+                obj.AddComponent<BoxCollider2D>();
             }
             
             // Something has been spawned, remember that
