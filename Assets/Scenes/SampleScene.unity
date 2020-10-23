@@ -142,6 +142,10 @@ PrefabInstance:
       propertyPath: dashAmount
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4613827797575289595, guid: 9ee567592c956c34dbd5c75f38d66a02, type: 3}
+      propertyPath: dashCoolDown
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4613827797575289597, guid: 9ee567592c956c34dbd5c75f38d66a02, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.63
