@@ -14,6 +14,7 @@ public partial class Player : MonoBehaviour
 
     Rigidbody2D rb;
     Animator anim;
+
     void Awake()
     {
         instance = this;
@@ -31,7 +32,6 @@ public partial class Player : MonoBehaviour
     {
         // Handle movement depending on keyboard inputs
         Move(moveInput);
-        Animate();
 
         //If the player loses all health move them back to spawn
         if (currentHealth <= 0)
@@ -50,5 +50,16 @@ public partial class Player : MonoBehaviour
     void FixedUpdate()
     {
         updatePosition();
+
+        if (moveInput.x != 0 || moveInput.y != 0) 
+        {
+            //Animate player while moving
+            Animate(moveInput);
+        }
+        else 
+        {
+            //If not moving set to idle
+            anim.SetLayerWeight(1, 0);
+        }
     }
 }

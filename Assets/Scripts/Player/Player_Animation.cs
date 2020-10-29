@@ -4,14 +4,11 @@ using UnityEngine;
 
 public partial class Player
 {
-    void Animate() {
-        if (moveInput != Vector2.zero)
-        {
-            anim.SetBool("isRunning", true);
-        } 
-        else
-        {
-            anim.SetBool("isRunning", false);
-        }
+    void Animate(Vector2 direction)
+    {
+        anim.SetLayerWeight(1, 1);
+
+        anim.SetFloat("x", direction.x);
+        anim.SetFloat("y", direction.y);
     }
 }
