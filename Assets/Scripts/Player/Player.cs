@@ -7,7 +7,6 @@ public partial class Player : MonoBehaviour
     // For future player reference
     public static Player instance;
 
-    
     public static float currentHealth;
     public static float maxHealth;
     public Transform startLocation;
@@ -15,9 +14,11 @@ public partial class Player : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
 
+    
     void Awake()
     {
         instance = this;
+        setInventory();
     }
 
     void Start()
@@ -32,7 +33,7 @@ public partial class Player : MonoBehaviour
     {
         // Handle movement depending on keyboard inputs
         Move(moveInput);
-
+        toggleInventory();
         //If the player loses all health move them back to spawn
         if (currentHealth <= 0)
         {

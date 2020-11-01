@@ -7,16 +7,22 @@ public partial class Player
         return Input.GetAxisRaw("Horizontal");
     }
 
-    
+
     float get_Vertical_Input()
     {
         return Input.GetAxisRaw("Vertical");
     }
 
 
-   bool get_Dash_Input()
+    bool get_Dash_Input()
     {
         return Input.GetKeyDown(KeyCode.LeftShift);
+    }
+
+
+    bool get_Inventory_Input()
+    {
+        return Input.GetKeyDown(KeyCode.B);
     }
 
 }
