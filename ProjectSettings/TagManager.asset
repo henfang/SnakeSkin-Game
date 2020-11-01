@@ -10,6 +10,9 @@ TagManager:
   - RoomObjects
   - Walls
   - IsRoom
+  - InventorySlot
+  - InventorySlotIcon
+  - Inventory
   - EnvironmentSpawnPoint
   layers:
   - Default
