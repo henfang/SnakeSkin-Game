@@ -27,12 +27,6 @@ public class ObjectSpawner : MonoBehaviour
     // Spawns a room on a Spawn Point based on which door requirement is needed
     void Spawn()
     {
-        if (itemID == 2)
-        {
-            rand = Random.Range(0, objectTemplates.roomObjects.Length);
-            GameObject obj = Instantiate(objectTemplates.roomObjects[rand], transform.position, objectTemplates.roomObjects[rand].transform.rotation);
-            obj.AddComponent<BoxCollider2D>();
-        }
         if (spawned == false)
         {
             spawnNumber = Random.Range(1, 10);
@@ -43,9 +37,22 @@ public class ObjectSpawner : MonoBehaviour
                 GameObject obj = Instantiate(objectTemplates.roomTiles[rand], transform.position, objectTemplates.roomTiles[rand].transform.rotation);
                 obj.AddComponent<BoxCollider2D>();
             }
-            
+            if (itemID == 2)
+            {
+                rand = Random.Range(0, objectTemplates.roomObjects.Length);
+                GameObject obj = Instantiate(objectTemplates.roomObjects[rand], transform.position, objectTemplates.roomObjects[rand].transform.rotation);
+                obj.AddComponent<BoxCollider2D>();
+            }
+            if (itemID == 3)
+            {
+                rand = Random.Range(0, objectTemplates.environmentObjects.Length);
+                GameObject obj = Instantiate(objectTemplates.environmentObjects[rand], transform.position, objectTemplates.environmentObjects[rand].transform.rotation);
+            }
+
             // Something has been spawned, remember that
             spawned = true;
         }
     }
+        
+        
 }

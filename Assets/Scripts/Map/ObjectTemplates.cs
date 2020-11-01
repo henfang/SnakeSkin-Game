@@ -10,4 +10,7 @@ public class ObjectTemplates : MonoBehaviour
 
     // Objects that can be placed in a room
     public GameObject[] roomObjects;
+
+    // Environment objects that can be placed in a room
+    public GameObject[] environmentObjects;
 }
