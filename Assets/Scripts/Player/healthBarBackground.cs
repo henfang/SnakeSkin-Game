@@ -13,7 +13,7 @@ public class healthBarBackground : MonoBehaviour
 
     void Update()
     {
-        localScale.x = Player.maxHealth / 50;
+        localScale.x = Player.maxHealth / 100;
         transform.localScale = localScale;
     }
 }

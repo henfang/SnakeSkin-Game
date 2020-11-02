@@ -13,7 +13,7 @@ public class healthBar : MonoBehaviour
 
     void Update()
     {
-        localScale.x = Player.currentHealth / 50;
+        localScale.x = Player.currentHealth / 100;
         transform.localScale = localScale;
     }
 }

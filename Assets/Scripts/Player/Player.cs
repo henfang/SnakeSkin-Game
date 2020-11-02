@@ -9,20 +9,25 @@ public partial class Player : MonoBehaviour
 
     public static float currentHealth;
     public static float maxHealth;
+    private bool isInvincible = false;
+    public float invincibleDurationSec;
+    public float invincibleDeltaTime;
+    public GameObject model;
+    public Vector3 baseScale = new Vector3(.2f, .2f);
     public Transform startLocation;
 
     Rigidbody2D rb;
     Animator anim;
 
-    
-    void Awake()
+    private void Awake()
     {
-        instance = this;
-        setInventory();
+        
     }
 
     void Start()
     {
+        instance = this;
+        setInventory();
         currentHealth = 100f;
         maxHealth = 100f;
         rb = GetComponent<Rigidbody2D>();
@@ -62,5 +67,10 @@ public partial class Player : MonoBehaviour
             //If not moving set to idle
             anim.SetLayerWeight(1, 0);
         }
+    }
+
+    void SetModelScale(Vector3 scale)
+    {
+        model.transform.localScale = scale;
     }
 }
