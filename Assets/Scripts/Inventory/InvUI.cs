@@ -9,53 +9,69 @@ public class InvUI : MonoBehaviour
     Transform slotContainer;
     Transform itemTemplate;
 
+    // Find the location of the inventory canvas in the hierarchy 
     private void Awake() {
         slotContainer = transform.Find("slotsContainer");
         itemTemplate = slotContainer.Find("itemTemplate");
         invUI = GameObject.FindGameObjectWithTag("Inventory");
-        invUI.SetActive(false);
+        invUI.SetActive(false); // initially start the game with inventory toggled off
     }
+
+    // Initialize a link between the player and inventory
     internal void SetInventory(Inv inventory)
     {   
         this.inventory = inventory;
+
+        // Handle inventory updates and force refresh when needed
         inventory.OnItemChange += inventory_OnitemChange;
-        refresh();
+        Refresh();
     }
 
+    // EventHandler
     void inventory_OnitemChange(object sender, System.EventArgs eventArgs) {
-        refresh();
+        Refresh();
     }
 
+    // Toggles inventory to become active or inactive
     public void setActive() {
         invUI.SetActive(!invUI.activeSelf);
     }
 
-    void refresh() {
+    // TODO: limit number of colums, thus giving set size of the inventory
+    //          - could add a check before creating the newItem, and breaking from the loop if reached.
+    void Refresh() {
         foreach (Transform child in slotContainer) {
             if (child != itemTemplate) {
                 Destroy(child.gameObject);
             } 
         }
 
-        int row = 0;
-        int col = 0;
-        int xPos = 30;
-        int yPos = -50;
-        int spacing = 15;
-        float itemCellSize = 30f;
+        // Create the cells in the inventory
+        int row = 0;        // used for limiting the number of cells a row can have 
+        int col = 0;        // used for limiting the number of rows in the inventory
+        int xPos = 30;      // starting location of the first cell in the canvas
+        int yPos = -50;     // starting location of the first cell in the canvas
+        int spacing = 15;   // space between each cell in the (x) and (y) direction
+
+        int cells = 4;              // for easier adjustment of the number of cells 
+        float itemCellSize = 30f;   // size of each cell
 
         foreach (Item item in inventory.GetItems())
         {
+            // Create a new game object within the container for slots, in the form of the item template previously created
+            // Then set its position in the canvas
             RectTransform newItem = Instantiate(itemTemplate, slotContainer).GetComponent<RectTransform>();
             newItem.gameObject.SetActive(true);
             newItem.anchoredPosition = new Vector2(xPos + (row * (itemCellSize + spacing)), yPos - (col * (itemCellSize + spacing)));
 
+            // Create a child to hold the image of the item that will be displayed in the inventory slot
             Image image = newItem.Find("Image").GetComponent<Image>();
             image.sprite = item.GetSprite();
             image.transform.localScale = new Vector3(5, 5, 5);
 
+            // Inventory size check 
             row++;
-            if (row > 4) {
+            if (row > cells) {
                 row = 0;
                 col++;
             }

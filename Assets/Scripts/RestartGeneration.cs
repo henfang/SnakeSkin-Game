@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 // Restarts Generation on "r" press
 public class RestartGeneration : MonoBehaviour

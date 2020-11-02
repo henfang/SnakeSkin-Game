@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 // Stores all the possible objects that can be spawned
 public class ObjectTemplates : MonoBehaviour

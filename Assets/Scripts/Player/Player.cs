@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public partial class Player : MonoBehaviour
 {
@@ -38,7 +36,10 @@ public partial class Player : MonoBehaviour
     {
         // Handle movement depending on keyboard inputs
         Move(moveInput);
+
+        // Handle inventory 
         toggleInventory();
+
         //If the player loses all health move them back to spawn
         if (currentHealth <= 0)
         {

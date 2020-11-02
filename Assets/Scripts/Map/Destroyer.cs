@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 // Destroys anything that collides with the Destroyer
 public class Destroyer : MonoBehaviour

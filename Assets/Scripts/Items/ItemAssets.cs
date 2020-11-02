@@ -1,7 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+// Complementary class for the Item class
+// It is used as a container for all sprites of the pick-up items to be used.
 public class ItemAssets : MonoBehaviour
 {
     public static ItemAssets Instance { get; private set; }

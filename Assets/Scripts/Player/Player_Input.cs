@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+// Handle all Inputs here
 public partial class Player
 {
     float get_Horizontal_Input()
