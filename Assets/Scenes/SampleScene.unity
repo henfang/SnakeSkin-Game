@@ -1995,8 +1995,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 400368739
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -6329748858867364475, guid: 64864f4c217a3f943a46d020a4128719, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2406,10 +2406,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomTiles:
   - {fileID: 4660249626168791686, guid: b870ce073dfc3004d870a4e0ad7b732a, type: 3}
-  roomObjects:
-  - {fileID: 1786471451590589282, guid: 1b3e6618552f8224dbafd9625dbfe56a, type: 3}
-  - {fileID: 8455877985506323449, guid: 0fcc7db448d99ca41ac38e686d817eb0, type: 3}
-  - {fileID: 3924260494669664981, guid: d4dd561d8752918488c4696b9d8df906, type: 3}
+  roomObjects: []
+  environmentObjects:
+  - {fileID: 6022366890621540264, guid: 196f4fca36e61fd4b8aa877b66c2b340, type: 3}
+  - {fileID: 7951905453797918718, guid: cb1205b553d264a47a749d399338596e, type: 3}
+  - {fileID: 510658041935515652, guid: da214f2cfe7eb404099555ddfbb012c1, type: 3}
 --- !u!224 &1804881696 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3478095510824267271, guid: 4d472ecd9aa31764e98d50a3855bcb12, type: 3}
