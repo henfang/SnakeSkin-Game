@@ -1,5 +1,7 @@
 ﻿// Handle Pick-Ups here
 
+using UnityEngine;
+
 public partial class Player
 {
     // Using temporary movement speed cap (30); default speed starts at 10
@@ -9,5 +11,12 @@ public partial class Player
         } else {
             movementSpeed = movementSpeed + amount;
         }
+    }
+    
+    public void HealthPotion(float heal) {
+        Debug.Log(currentHealth);
+        currentHealth += heal;
+        healthBar.Instance.Refresh();
+        Debug.Log(currentHealth);
     }
 }

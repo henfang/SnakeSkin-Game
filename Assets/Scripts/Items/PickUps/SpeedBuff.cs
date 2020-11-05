@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
 
-public class PickUp : MonoBehaviour
+public class SpeedBuff : MonoBehaviour
 {
     [Range(0, 20)]
     public float speedBuff;
 
     GameObject inventory;
-    Item item;
 
     private void Start() {
         inventory = GameObject.FindGameObjectWithTag("Inventory");
