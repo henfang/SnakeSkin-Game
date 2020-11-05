@@ -14,7 +14,7 @@ public partial class Player {
     // TODO: change for later assignments :) 
     // Temporary speedBuff addition for testing purposes, when picking-up the RootBeers
     public void addSpeedBuffToInventory() {
-        inventory.AddItem(new Item {itemType = Item.ItemType.SpeedBuff, amount = 1 });
+        inventory.AddItem(new Item {itemType = Item.ItemType.SpeedBuff, quantity = 1 });
     }
 
     // Handles the Toggle On/Off of the inventory when the keyboard key "b" is pressed.

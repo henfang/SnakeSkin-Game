@@ -49,12 +49,13 @@ public class InvUI : MonoBehaviour
         // Create the cells in the inventory
         int row = 0;        // used for limiting the number of cells a row can have 
         int col = 0;        // used for limiting the number of rows in the inventory
-        int xPos = 30;      // starting location of the first cell in the canvas
+        int xPos = 40;      // starting location of the first cell in the canvas
         int yPos = -50;     // starting location of the first cell in the canvas
-        int spacing = 15;   // space between each cell in the (x) and (y) direction
+        int spacing = 130;   // space between each cell in the (x) and (y) direction
 
         int cells = 4;              // for easier adjustment of the number of cells 
-        float itemCellSize = 30f;   // size of each cell
+        float itemCellSize = 80f;   // size of each cell
+        int imageSize = 10;
 
         foreach (Item item in inventory.GetItems())
         {
@@ -67,7 +68,15 @@ public class InvUI : MonoBehaviour
             // Create a child to hold the image of the item that will be displayed in the inventory slot
             Image image = newItem.Find("Image").GetComponent<Image>();
             image.sprite = item.GetSprite();
-            image.transform.localScale = new Vector3(5, 5, 5);
+            image.transform.localScale = new Vector3(imageSize, imageSize, imageSize);
+
+            // Update the Text of items in the inventory, depending on quantity 
+            Text text = newItem.Find("itemText").GetComponent<Text>();
+            if (item.quantity > 1) {
+                text.text = item.quantity.ToString();
+            } else {
+                text.text = "";
+            }
 
             // Inventory size check 
             row++;
