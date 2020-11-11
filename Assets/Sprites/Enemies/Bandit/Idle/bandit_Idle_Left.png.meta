@@ -1,7 +1,13 @@
 fileFormatVersion: 2
-guid: ea754a0b689b2ea43bd9febc8d2fba65
+guid: 4182f7503b541cb45a30242881030833
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1255570009197606917
+    second: bandit_Idle_Left_0
+  - first:
+      213: -179408979497177843
+    second: bandit_Idle_Left_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +47,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -87,7 +93,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: bandit_Idle_Left_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 380
+        width: 140
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7842b9ab1539ee0800000000000000
+      internalID: -1255570009197606917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandit_Idle_Left_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 60
+        width: 140
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d2e83db7c928df0800000000000000
+      internalID: -179408979497177843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

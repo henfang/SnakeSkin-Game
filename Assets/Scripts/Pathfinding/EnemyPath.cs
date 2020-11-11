@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using UnityEditor.Experimental.GraphView;
 
 public class EnemyPath : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class EnemyPath : MonoBehaviour
     public float enemyRadius = 6f;
     private float nextPoint = 1f;
     private Vector2 origin;
+    private Vector2 direction;
 
     int currentPoint = 0;
     bool endOfPath = false;
@@ -17,6 +19,7 @@ public class EnemyPath : MonoBehaviour
     Path currentPath;
     Seeker seeker;
     Rigidbody2D rigidbody;
+    Animator anim;
 
     void ifPathComplete(Path path) {
         if (!path.error) {
@@ -31,45 +34,67 @@ public class EnemyPath : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         seeker = GetComponent<Seeker>();
         rigidbody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         origin = rigidbody.position;
 
         InvokeRepeating("UpdatePath", 0f, 0.5f);
         seeker.StartPath(rigidbody.position, target.position, ifPathComplete);
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         float d = Vector2.Distance(rigidbody.position, target.position);
-        if (d < enemyRadius) {
-            if (currentPath == null) {
-            return;
-        }
+        if (d < enemyRadius)
+        {
+            if (currentPath == null)
+            {
+                return;
+            }
 
-        if (currentPoint >= currentPath.vectorPath.Count) {
-            endOfPath = true;
-            return;
-        }
-        else {
+            if (currentPoint >= currentPath.vectorPath.Count)
+            {
+                endOfPath = true;
+                return;
+            }
+            else
+            {
             endOfPath = false;
+            }
+
+            direction = ((Vector2)currentPath.vectorPath[currentPoint] - rigidbody.position).normalized;
+            Vector2 force = direction * speed * Time.fixedDeltaTime;
+
+            if (direction.x != 0 || direction.y != 0)
+            {
+                //Animate bandit while chasing player
+                banditAnimate(direction);
+            }
+            else
+            {
+                //If not chasing player set to bandit idle
+                anim.SetLayerWeight(1, 0);
+            }
+
+            rigidbody.AddForce(force);
+
+            float distance = Vector2.Distance(rigidbody.position, currentPath.vectorPath[currentPoint]);
+
+            if (distance < nextPoint)
+            {
+                currentPoint++;
+            }
         }
 
-        Vector2 direction = ((Vector2)currentPath.vectorPath[currentPoint] - rigidbody.position).normalized;
-        Vector2 force = direction * speed * Time.fixedDeltaTime;
-
-        rigidbody.AddForce(force);
-
-        float distance = Vector2.Distance(rigidbody.position, currentPath.vectorPath[currentPoint]);
-
-        if (distance < nextPoint) {
-            currentPoint++;
+        if (d >= enemyRadius) 
+        {
+            //If out of chase radius set variables to idle values
+            anim.SetFloat("x", 0);
+            anim.SetFloat("y", 0);
         }
-    }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -77,7 +102,17 @@ public class EnemyPath : MonoBehaviour
         if (collision.gameObject.tag == "Fireball") {
            rigidbody.position = origin;
         }
+        else if (collision.gameObject.tag == "Player")
+        {
+            Player.instance.GetHurt(10);
+        }
     }
     
-        
+    void banditAnimate(Vector2 dir) 
+    {
+        anim.SetLayerWeight(1, 1);
+
+        anim.SetFloat("x", dir.x);
+        anim.SetFloat("y", dir.y);
+    }
 }
