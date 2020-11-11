@@ -8,7 +8,7 @@ public class EnemyPath : MonoBehaviour
 {
     public Transform target;
     public float speed = 200;
-    public float enemyRadius = 6f;
+    public float enemyRadius = 5f;
     private float nextPoint = 1f;
     private Vector2 origin;
     private Vector2 direction;
@@ -48,7 +48,7 @@ public class EnemyPath : MonoBehaviour
     void FixedUpdate()
     {
         float d = Vector2.Distance(rigidbody.position, target.position);
-        if (d < enemyRadius)
+        if (d <= enemyRadius)
         {
             if (currentPath == null)
             {
@@ -89,7 +89,7 @@ public class EnemyPath : MonoBehaviour
             }
         }
 
-        if (d >= enemyRadius) 
+        if (d > enemyRadius) 
         {
             //If out of chase radius set variables to idle values
             anim.SetFloat("x", 0);
@@ -104,7 +104,7 @@ public class EnemyPath : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Player")
         {
-            Player.instance.GetHurt(10);
+            Player.instance.GetHurt();
         }
     }
     

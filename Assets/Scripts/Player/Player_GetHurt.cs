@@ -3,13 +3,13 @@ using UnityEngine;
 
 public partial class Player
 {
-    public void GetHurt(float damage)
+    public void GetHurt()
     {
         //If the player is invincible they won't take damage
         if (isInvincible) return;
 
-        //Remove health
-        currentHealth -= damage;
+        //Take away a heart when damaged
+        currentHearts -= 1;
 
         //Start invincibility period
         StartCoroutine(StartTemporaryInvincible());

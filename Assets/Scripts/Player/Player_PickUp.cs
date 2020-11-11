@@ -12,11 +12,4 @@ public partial class Player
             movementSpeed = movementSpeed + amount;
         }
     }
-    
-    public void HealthPotion(float heal) {
-        Debug.Log(currentHealth);
-        currentHealth += heal;
-        healthBar.Instance.Refresh();
-        Debug.Log(currentHealth);
-    }
 }

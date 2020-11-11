@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public partial class Player : MonoBehaviour
 {
     // For future player reference
     public static Player instance;
 
-    public static float currentHealth;
-    public static float maxHealth;
     private bool isInvincible = false;
     public float invincibleDurationSec;
     public float invincibleDeltaTime;
@@ -14,20 +13,20 @@ public partial class Player : MonoBehaviour
     public Vector3 baseScale = new Vector3(.2f, .2f);
     public Transform startLocation;
 
+    public int currentHearts;
+    public int totalHearts;
+
+    public Image[] hearts;
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
+
     Rigidbody2D rb;
     Animator anim;
-
-    private void Awake()
-    {
-        
-    }
 
     void Start()
     {
         instance = this;
         setInventory();
-        currentHealth = 100f;
-        maxHealth = 100f;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -40,18 +39,9 @@ public partial class Player : MonoBehaviour
         // Handle inventory 
         toggleInventory();
 
-        //If the player loses all health move them back to spawn
-        if (currentHealth <= 0)
-        {
-            transform.position = startLocation.position;
-            currentHealth = maxHealth;
-        }
+        //Create the health bar
+        DrawHealthBar();
 
-        //If the player is healed beyond full, heal down to full
-        if (currentHealth > maxHealth) 
-        {
-            currentHealth = maxHealth;
-        }
     }
 
     void FixedUpdate()
@@ -73,5 +63,10 @@ public partial class Player : MonoBehaviour
     void SetModelScale(Vector3 scale)
     {
         model.transform.localScale = scale;
+    }
+
+    public void Respawn()
+    {
+        transform.position = startLocation.position;
     }
 }

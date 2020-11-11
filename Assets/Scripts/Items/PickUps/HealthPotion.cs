@@ -2,11 +2,9 @@
 
 public class HealthPotion : MonoBehaviour
 {
-    [Range(0, 100)]
-    public float heal;
-
-    void handleHealthPotion() {
-        Player.instance.HealthPotion(heal);
+    void handleHealthPotion()
+    {
+        Player.instance.Heal();
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
