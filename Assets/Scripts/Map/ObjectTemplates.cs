@@ -11,4 +11,10 @@ public class ObjectTemplates : MonoBehaviour
 
     // Environment objects that can be placed in a room
     public GameObject[] environmentObjects;
+
+    // Enemy objects that can be spawned
+    public GameObject[] enemyObjects;
+
+    // PowerUp objects that can spawn in the room
+    public GameObject[] powerUpObjects;
 }
