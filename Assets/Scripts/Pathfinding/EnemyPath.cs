@@ -6,7 +6,7 @@ using UnityEditor.Experimental.GraphView;
 
 public class EnemyPath : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
     public float speed = 200;
     public float enemyRadius = 5f;
     private float nextPoint = 1f;
@@ -40,6 +40,7 @@ public class EnemyPath : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         origin = rigidbody.position;
+        target = GameObject.FindWithTag("Player").GetComponent<Transform>();
 
         InvokeRepeating("UpdatePath", 0f, 0.5f);
         seeker.StartPath(rigidbody.position, target.position, ifPathComplete);
