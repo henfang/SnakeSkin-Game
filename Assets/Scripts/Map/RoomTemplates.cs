@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Threading;
+using UnityEngine;
 
 // Stores all the possible rooms that can be spawned
 public class RoomTemplates : MonoBehaviour
@@ -14,4 +16,26 @@ public class RoomTemplates : MonoBehaviour
 
     // A filled in room with no interior
     public GameObject closedRoom;
+
+    // List of all rooms spawned
+    public List<GameObject> rooms;
+
+    public float waitTime;
+    private bool spawnedBoss;
+    public GameObject boss;
+
+
+    void Update()
+    {
+        if (waitTime <= 0 && !spawnedBoss)
+        {
+            Instantiate(boss, rooms[rooms.Count - 1].transform.position, Quaternion.identity);
+            spawnedBoss = true;
+        }
+        else
+        {
+            waitTime -= Time.deltaTime;
+        }
+    }
+        
 }

@@ -16,8 +16,12 @@ public class RoomSpawner : MonoBehaviour
     // Variable that remembers whether this spawn point has already spawned an object or not
     private bool spawned = false;
 
+    public float waitTime = 4f;
+
     void Start()
     {
+        // Declutter spawnPoints
+        Destroy(gameObject, waitTime);
         // templates contains all the different types of rooms that can be spawned
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
         // Calls Spawn() every 0.1 seconds

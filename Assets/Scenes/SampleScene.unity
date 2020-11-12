@@ -995,6 +995,9 @@ MonoBehaviour:
   - {fileID: 859556336318956399, guid: 4cc64c6799c26c648bc7ff9dbbe00f88, type: 3}
   - {fileID: 7803961135504413449, guid: a2839f1b0e8ad504994a1d53887a22b6, type: 3}
   closedRoom: {fileID: 6627375827315987801, guid: 8a1ebaa7898466046a2c7e426353d262, type: 3}
+  rooms: []
+  waitTime: 2
+  boss: {fileID: 3924260494669664981, guid: d4dd561d8752918488c4696b9d8df906, type: 3}
 --- !u!4 &912927914
 Transform:
   m_ObjectHideFlags: 0
