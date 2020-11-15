@@ -15,6 +15,7 @@ TagManager:
   - Inventory
   - EnvironmentSpawnPoint
   - Fireball
+  - Enemy
   layers:
   - Default
   - TransparentFX

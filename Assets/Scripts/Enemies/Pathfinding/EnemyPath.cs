@@ -97,17 +97,6 @@ public class EnemyPath : MonoBehaviour
             anim.SetFloat("y", 0);
         }
     }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Fireball") {
-           rigidbody.position = origin;
-        }
-        else if (collision.gameObject.tag == "Player")
-        {
-            Player.instance.GetHurt();
-        }
-    }
     
     void banditAnimate(Vector2 dir) 
     {
