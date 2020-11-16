@@ -23,7 +23,21 @@ public class KillManager : MonoBehaviour
     // Update number of bandit kills
     public void UpdateBanditKills()
     {
-        killCounterBandits++;
+        if (killCounterBandits != targetBanditKills)
+        {
+            killCounterBandits++;
+        }
         killText.text = "Bandits Killed: " + killCounterBandits.ToString() + "/" + targetBanditKills.ToString();
+    }
+
+    // Return whether or not the bandit kill goal has been reached
+    public bool banditKillGoalReached()
+    {
+
+        if (killCounterBandits >= targetBanditKills)
+        {
+            return true;
+        }
+        return false;
     }
 }

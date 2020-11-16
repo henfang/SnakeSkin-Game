@@ -16,6 +16,7 @@ public class EnemySpawner : MonoBehaviour
     // Variable that remembers whether this spawn point has already spawned an object or not
     private bool spawned = false;
 
+
     void Start()
     {
         // itemTemplates contains all the different types of objects that can be spawned in a room
@@ -24,12 +25,13 @@ public class EnemySpawner : MonoBehaviour
         Invoke("Spawn", 0.1f);
     }
 
+
     // Spawns a room on a Spawn Point based on which door requirement is needed
     void Spawn()
     {
         if (spawned == false)
         {
-            // Spawn basic enemies
+            // Spawn bandit enemies
             if (enemyID == 1)
             {
                 rand = Random.Range(0, enemyTemplates.enemies.Length);

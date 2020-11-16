@@ -48,13 +48,6 @@ public class ObjectSpawner : MonoBehaviour
                 GameObject obj = Instantiate(objectTemplates.environmentObjects[rand], transform.position, objectTemplates.environmentObjects[rand].transform.rotation);
             }
 
-            // 50% chance of spawning an enemy at each spawn point
-            if (itemID == 4 && spawnNumber <= 5)
-            {
-                rand = Random.Range(0, objectTemplates.enemyObjects.Length);
-                GameObject obj = Instantiate(objectTemplates.enemyObjects[rand], transform.position, objectTemplates.enemyObjects[rand].transform.rotation);
-            }
-
             // 50% chance of spawning a power up at each spawn point
             if (itemID == 5 && spawnNumber <= 5)
             {

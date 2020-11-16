@@ -16,6 +16,10 @@ TagManager:
   - EnvironmentSpawnPoint
   - Fireball
   - Enemy
+  - Score
+  - EnemySpawnPoint
+  - Enemies
+  - KillManager
   layers:
   - Default
   - TransparentFX
