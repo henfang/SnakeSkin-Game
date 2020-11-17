@@ -20,6 +20,7 @@ TagManager:
   - EnemySpawnPoint
   - Enemies
   - KillManager
+  - BossSpawnPoint
   layers:
   - Default
   - TransparentFX

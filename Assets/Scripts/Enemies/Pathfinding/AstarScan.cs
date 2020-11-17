@@ -5,9 +5,10 @@ using Pathfinding;
 
 public class AstarScan : MonoBehaviour
 {
+    public float waitTime = 5.0f;
     IEnumerator Start()
  {
-     yield return new WaitForSeconds(0.5f);
+     yield return new WaitForSeconds(waitTime);
      AstarPath.active.Scan();
  }
 }

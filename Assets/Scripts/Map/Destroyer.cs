@@ -8,6 +8,7 @@ public class Destroyer : MonoBehaviour
         if (other.gameObject.CompareTag("IsRoom"))
         {
             Destroy(other.gameObject);
+            Debug.Log("HIIIII");
         }
     }
 }

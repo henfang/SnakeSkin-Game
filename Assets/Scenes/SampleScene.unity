@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7774133698a204067b07fdcf9bb3c68d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 5
 --- !u!114 &151517770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1134,6 +1135,10 @@ MonoBehaviour:
   - {fileID: 7803961135504413449, guid: a2839f1b0e8ad504994a1d53887a22b6, type: 3}
   - {fileID: 8991991719162890966, guid: a91803ff301283545bc019ee24a91efb, type: 3}
   closedRoom: {fileID: 6627375827315987801, guid: 8a1ebaa7898466046a2c7e426353d262, type: 3}
+  bossRoomsRight:
+  - {fileID: 6864406501423277801, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+  bossRoomSpawned: 0
+  bossRoomSpawnChance: 1
   rooms: []
 --- !u!4 &912927914
 Transform:

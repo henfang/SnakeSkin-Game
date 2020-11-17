@@ -28,7 +28,7 @@ public class BossSpawner : MonoBehaviour
     {
         if (waitTime <= 0 && !spawnedBoss && killManager.banditKillGoalReached())
         {
-            Instantiate(boss, roomTemplates.rooms[roomTemplates.rooms.Count - 1].transform.position, Quaternion.identity);
+            Instantiate(boss, GameObject.FindGameObjectWithTag("BossSpawnPoint").transform.position, Quaternion.identity);
             spawnedBoss = true;
         }
         waitTime -= Time.deltaTime;

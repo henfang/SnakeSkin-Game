@@ -28,6 +28,7 @@ public class RoomSpawner : MonoBehaviour
         Invoke("Spawn", 0.1f);
     }
 
+
     // Spawns a room on a Spawn Point based on which door requirement is needed
     void Spawn()
     {
@@ -53,8 +54,19 @@ public class RoomSpawner : MonoBehaviour
             // If we need a right door
             else if (openingDirection == 4)
             {
-                rand = Random.Range(0, templates.rightRooms.Length);
-                Instantiate(templates.rightRooms[rand], transform.position, templates.rightRooms[rand].transform.rotation);
+                rand = Random.Range(0, 10);
+                if (!templates.bossRoomSpawned && templates.bossRoomSpawnChance >= rand)
+                {
+                    rand = Random.Range(0, templates.bossRoomsRight.Length);
+                    Instantiate(templates.bossRoomsRight[rand], transform.position, templates.bossRoomsRight[rand].transform.rotation);
+                    templates.bossRoomSpawned = true;
+                }
+                else
+                {
+                    templates.bossRoomSpawnChance++;
+                    rand = Random.Range(0, templates.rightRooms.Length);
+                    Instantiate(templates.rightRooms[rand], transform.position, templates.rightRooms[rand].transform.rotation);
+                }
             }
             // Something has been spawned, remember that
             spawned = true;
