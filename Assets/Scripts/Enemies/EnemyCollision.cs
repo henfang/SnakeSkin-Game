@@ -2,11 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyCollision : MonoBehaviour
+public partial class EnemyCollision : MonoBehaviour
 {
-    private Vector2 origin;
-    Rigidbody2D rigidbody;
-
     KillManager killManager;
 
     void Start()
@@ -14,12 +11,16 @@ public class EnemyCollision : MonoBehaviour
         killManager = GameObject.FindObjectOfType<KillManager>();
     }
 
+    private void Update()
+    {
+        DrawEnemyHealthBar();
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Fireball")
         {
-            killManager.UpdateBanditKills();
-            Destroy(gameObject);
+            EnemyDamage();
         }
         else if (collision.gameObject.tag == "Player")
         {
