@@ -17,16 +17,25 @@ public class RoomTemplates : MonoBehaviour
     // A filled in room with no interior
     public GameObject closedRoom;
 
-    // Boss room with door on the right
+    // Boss rooms
+    public GameObject[] bossRoomsBottom;
+    public GameObject[] bossRoomsTop;
     public GameObject[] bossRoomsRight;
+    public GameObject[] bossRoomsLeft;
+
     // Remembers if a boss room has been spawned or not
     public bool bossRoomSpawned = false;
-    // Chance of a boss room spawning at a given moment
-    public int bossRoomSpawnChance = 1;
+    // Boss room spawn location
+    public int bossRoomSpawnPlace;
 
 
     // List of all rooms spawned
     public List<GameObject> rooms;
 
-  
+    private void Start()
+    {
+        bossRoomSpawnPlace = Random.Range(1, 4);
+    }
+
+
 }

@@ -11,11 +11,11 @@ public class BossSpawner : MonoBehaviour
     private KillManager killManager;
 
     // Have we spawned a boss or not
-    private bool spawnedBoss;
+    private bool spawnedBoss = false;
     // What boss to spawn
     public GameObject boss;
     // Minimum time to wait before spawning boss
-    public float waitTime = 5.0f;
+    public float waitTime = 10.0f;
 
     void Start()
     {

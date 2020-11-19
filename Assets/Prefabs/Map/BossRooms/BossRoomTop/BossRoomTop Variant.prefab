@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5319817400893114147
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1286220055841529480, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1286220055841529480, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760644839092149448, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.9922729
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760644839092149448, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8990457
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379818750725332512, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379818750725332512, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5129229367923976238, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.077555
+      objectReference: {fileID: 0}
+    - target: {fileID: 5129229367923976238, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.31778
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565951993000574588, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565951993000574588, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565951993000574588, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565951993000574588, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565951993000574588, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565951993000574588, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565951993000574588, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565951993000574588, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565951993000574588, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565951993000574588, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565951993000574588, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864406501423277801, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+      propertyPath: m_Name
+      value: BossRoomBottom Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}

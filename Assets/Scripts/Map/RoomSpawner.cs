@@ -36,26 +36,52 @@ public class RoomSpawner : MonoBehaviour
             // If we need a bottom door
             if (openingDirection == 1)
             {
-                rand = Random.Range(0, templates.bottomRooms.Length);
-                Instantiate(templates.bottomRooms[rand], transform.position, templates.bottomRooms[rand].transform.rotation);
+                if (!templates.bossRoomSpawned && templates.bossRoomSpawnPlace == 1)
+                {
+                    rand = Random.Range(0, templates.bossRoomsBottom.Length);
+                    Instantiate(templates.bossRoomsBottom[rand], transform.position, templates.bossRoomsBottom[rand].transform.rotation);
+                    templates.bossRoomSpawned = true;
+                }
+                else
+                {
+                    rand = Random.Range(0, templates.bottomRooms.Length);
+                    Instantiate(templates.bottomRooms[rand], transform.position, templates.bottomRooms[rand].transform.rotation);
+                }
             }
             // If we need a left door
             else if (openingDirection == 2)
             {
-                rand = Random.Range(0, templates.leftRooms.Length);
-                Instantiate(templates.leftRooms[rand], transform.position, templates.leftRooms[rand].transform.rotation);
+                if (!templates.bossRoomSpawned && templates.bossRoomSpawnPlace == 2)
+                {
+                    rand = Random.Range(0, templates.bossRoomsLeft.Length);
+                    Instantiate(templates.bossRoomsLeft[rand], transform.position, templates.bossRoomsLeft[rand].transform.rotation);
+                    templates.bossRoomSpawned = true;
+                }
+                else
+                {
+                    rand = Random.Range(0, templates.leftRooms.Length);
+                    Instantiate(templates.leftRooms[rand], transform.position, templates.leftRooms[rand].transform.rotation);
+                }
             }
             // If we need a top door
             else if (openingDirection == 3)
             {
-                rand = Random.Range(0, templates.topRooms.Length);
-                Instantiate(templates.topRooms[rand], transform.position, templates.topRooms[rand].transform.rotation);
+                if (!templates.bossRoomSpawned && templates.bossRoomSpawnPlace == 3)
+                {
+                    rand = Random.Range(0, templates.bossRoomsTop.Length);
+                    Instantiate(templates.bossRoomsTop[rand], transform.position, templates.bossRoomsTop[rand].transform.rotation);
+                    templates.bossRoomSpawned = true;
+                }
+                else
+                {
+                    rand = Random.Range(0, templates.topRooms.Length);
+                    Instantiate(templates.topRooms[rand], transform.position, templates.topRooms[rand].transform.rotation);
+                }
             }
             // If we need a right door
             else if (openingDirection == 4)
             {
-                rand = Random.Range(0, 10);
-                if (!templates.bossRoomSpawned && templates.bossRoomSpawnChance >= rand)
+                if (!templates.bossRoomSpawned && templates.bossRoomSpawnPlace == 4)
                 {
                     rand = Random.Range(0, templates.bossRoomsRight.Length);
                     Instantiate(templates.bossRoomsRight[rand], transform.position, templates.bossRoomsRight[rand].transform.rotation);
@@ -63,7 +89,6 @@ public class RoomSpawner : MonoBehaviour
                 }
                 else
                 {
-                    templates.bossRoomSpawnChance++;
                     rand = Random.Range(0, templates.rightRooms.Length);
                     Instantiate(templates.rightRooms[rand], transform.position, templates.rightRooms[rand].transform.rotation);
                 }

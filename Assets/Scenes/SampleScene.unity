@@ -1009,7 +1009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boss: {fileID: 1959382003104593068, guid: d47a9be151ab0d84d9d12f661eff9a83, type: 3}
-  waitTime: 4
+  waitTime: 6
 --- !u!4 &646870704
 Transform:
   m_ObjectHideFlags: 0
@@ -1135,10 +1135,20 @@ MonoBehaviour:
   - {fileID: 7803961135504413449, guid: a2839f1b0e8ad504994a1d53887a22b6, type: 3}
   - {fileID: 8991991719162890966, guid: a91803ff301283545bc019ee24a91efb, type: 3}
   closedRoom: {fileID: 6627375827315987801, guid: 8a1ebaa7898466046a2c7e426353d262, type: 3}
+  bossRoomsBottom:
+  - {fileID: 7213979331180724049, guid: 76c4ea84ee15f5d418cd93817ab9a4d1, type: 3}
+  - {fileID: 8517817742406615153, guid: bee7a44e5dea24c47bd9d35c0ba3fe3f, type: 3}
+  bossRoomsTop:
+  - {fileID: 753842053969200582, guid: ea458212f475853408b951f2d3ec03bf, type: 3}
+  - {fileID: 1625954383157682634, guid: 5d50c5d86937b3548a02dd0631d03a6f, type: 3}
   bossRoomsRight:
-  - {fileID: 6864406501423277801, guid: c911c5f51ec404f43bf2037c5e8e0307, type: 3}
+  - {fileID: 7822939514305433467, guid: c7c78a4476553b24aab5aa422aeb3d55, type: 3}
+  - {fileID: 1996522372636007844, guid: e5be2a8813c62044683b72674bd617fd, type: 3}
+  bossRoomsLeft:
+  - {fileID: 3211324025535211505, guid: 3cd3f530bbd43e147ae3ee2fc332cb36, type: 3}
+  - {fileID: 105252890585461535, guid: 06529c9ccf477b54f8b0af9a2b3bdd35, type: 3}
   bossRoomSpawned: 0
-  bossRoomSpawnChance: 1
+  bossRoomSpawnPlace: 0
   rooms: []
 --- !u!4 &912927914
 Transform:
