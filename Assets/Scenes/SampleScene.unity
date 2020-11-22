@@ -1134,6 +1134,10 @@ MonoBehaviour:
   - {fileID: 859556336318956399, guid: 4cc64c6799c26c648bc7ff9dbbe00f88, type: 3}
   - {fileID: 7803961135504413449, guid: a2839f1b0e8ad504994a1d53887a22b6, type: 3}
   - {fileID: 8991991719162890966, guid: a91803ff301283545bc019ee24a91efb, type: 3}
+  bottomClosed: {fileID: 7271345666890394407, guid: 3bd79cf564fddda45afb352772c677e4, type: 3}
+  topClosed: {fileID: 5542038607745894061, guid: b19610efaaf36f047b73a513fe06d125, type: 3}
+  leftClosed: {fileID: 3522068405345354726, guid: 616554b8835d111439c1e2dfc3d08616, type: 3}
+  rightClosed: {fileID: 8991991719162890966, guid: a91803ff301283545bc019ee24a91efb, type: 3}
   closedRoom: {fileID: 6627375827315987801, guid: 8a1ebaa7898466046a2c7e426353d262, type: 3}
   bossRoomsBottom:
   - {fileID: 7213979331180724049, guid: 76c4ea84ee15f5d418cd93817ab9a4d1, type: 3}
@@ -1150,6 +1154,10 @@ MonoBehaviour:
   bossRoomSpawned: 0
   bossRoomSpawnPlace: 0
   rooms: []
+  rightRoomCount: 0
+  leftRoomCount: 0
+  topRoomCount: 0
+  bottomRoomCount: 0
 --- !u!4 &912927914
 Transform:
   m_ObjectHideFlags: 0

@@ -18,6 +18,8 @@ public class RoomSpawner : MonoBehaviour
 
     public float waitTime = 4f;
 
+    public int map_size_limit = 7;
+
     void Start()
     {
         // Declutter spawnPoints
@@ -41,11 +43,20 @@ public class RoomSpawner : MonoBehaviour
                     rand = Random.Range(0, templates.bossRoomsBottom.Length);
                     Instantiate(templates.bossRoomsBottom[rand], transform.position, templates.bossRoomsBottom[rand].transform.rotation);
                     templates.bossRoomSpawned = true;
+                    templates.bottomRoomCount += 2;
                 }
                 else
                 {
-                    rand = Random.Range(0, templates.bottomRooms.Length);
-                    Instantiate(templates.bottomRooms[rand], transform.position, templates.bottomRooms[rand].transform.rotation);
+                    if (templates.bottomRoomCount <= map_size_limit)
+                    {
+                        rand = Random.Range(0, templates.bottomRooms.Length);
+                        Instantiate(templates.bottomRooms[rand], transform.position, templates.bottomRooms[rand].transform.rotation);
+                        templates.bottomRoomCount++;
+                    }
+                    else
+                    {
+                        Instantiate(templates.bottomClosed, transform.position, templates.bottomClosed.transform.rotation);
+                    }
                 }
             }
             // If we need a left door
@@ -56,11 +67,20 @@ public class RoomSpawner : MonoBehaviour
                     rand = Random.Range(0, templates.bossRoomsLeft.Length);
                     Instantiate(templates.bossRoomsLeft[rand], transform.position, templates.bossRoomsLeft[rand].transform.rotation);
                     templates.bossRoomSpawned = true;
+                    templates.leftRoomCount += 2;
                 }
                 else
                 {
-                    rand = Random.Range(0, templates.leftRooms.Length);
-                    Instantiate(templates.leftRooms[rand], transform.position, templates.leftRooms[rand].transform.rotation);
+                    if (templates.leftRoomCount <= map_size_limit)
+                    {
+                        rand = Random.Range(0, templates.leftRooms.Length);
+                        Instantiate(templates.leftRooms[rand], transform.position, templates.leftRooms[rand].transform.rotation);
+                        templates.leftRoomCount++;
+                    }
+                    else
+                    {
+                        Instantiate(templates.leftClosed, transform.position, templates.leftClosed.transform.rotation);
+                    }
                 }
             }
             // If we need a top door
@@ -71,11 +91,20 @@ public class RoomSpawner : MonoBehaviour
                     rand = Random.Range(0, templates.bossRoomsTop.Length);
                     Instantiate(templates.bossRoomsTop[rand], transform.position, templates.bossRoomsTop[rand].transform.rotation);
                     templates.bossRoomSpawned = true;
+                    templates.topRoomCount += 2;
                 }
                 else
                 {
-                    rand = Random.Range(0, templates.topRooms.Length);
-                    Instantiate(templates.topRooms[rand], transform.position, templates.topRooms[rand].transform.rotation);
+                    if (templates.topRoomCount <= map_size_limit)
+                    {
+                        rand = Random.Range(0, templates.topRooms.Length);
+                        Instantiate(templates.topRooms[rand], transform.position, templates.topRooms[rand].transform.rotation);
+                        templates.topRoomCount++;
+                    }
+                    else
+                    {
+                        Instantiate(templates.topClosed, transform.position, templates.topClosed.transform.rotation);
+                    }
                 }
             }
             // If we need a right door
@@ -86,11 +115,20 @@ public class RoomSpawner : MonoBehaviour
                     rand = Random.Range(0, templates.bossRoomsRight.Length);
                     Instantiate(templates.bossRoomsRight[rand], transform.position, templates.bossRoomsRight[rand].transform.rotation);
                     templates.bossRoomSpawned = true;
+                    templates.rightRoomCount += 2;
                 }
                 else
                 {
-                    rand = Random.Range(0, templates.rightRooms.Length);
-                    Instantiate(templates.rightRooms[rand], transform.position, templates.rightRooms[rand].transform.rotation);
+                    if (templates.rightRoomCount <= map_size_limit)
+                    {
+                        rand = Random.Range(0, templates.rightRooms.Length);
+                        Instantiate(templates.rightRooms[rand], transform.position, templates.rightRooms[rand].transform.rotation);
+                        templates.rightRoomCount++;
+                    }
+                    else
+                    {
+                        Instantiate(templates.rightClosed, transform.position, templates.rightClosed.transform.rotation);
+                    }
                 }
             }
             // Something has been spawned, remember that

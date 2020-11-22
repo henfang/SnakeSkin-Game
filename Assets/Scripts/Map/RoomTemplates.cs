@@ -14,6 +14,12 @@ public class RoomTemplates : MonoBehaviour
     // Array of all the rooms with a door on the right
     public GameObject[] rightRooms;
 
+    // Capping off rooms
+    public GameObject bottomClosed;
+    public GameObject topClosed;
+    public GameObject leftClosed;
+    public GameObject rightClosed;
+
     // A filled in room with no interior
     public GameObject closedRoom;
 
@@ -31,6 +37,12 @@ public class RoomTemplates : MonoBehaviour
 
     // List of all rooms spawned
     public List<GameObject> rooms;
+
+    // Variables to remember how many rooms have been spawned in each direction
+    public int rightRoomCount = 0;
+    public int leftRoomCount = 0;
+    public int topRoomCount = 0;
+    public int bottomRoomCount = 0;
 
     private void Start()
     {
