@@ -11,6 +11,7 @@ public partial class Player : MonoBehaviour
     public float invincibleDeltaTime;
     public GameObject model;
     public Vector3 baseScale = new Vector3(.2f, .2f);
+    public Vector3 invincibleScale = new Vector3(.001f, .001f);
     public Transform startLocation;
 
     public int currentHearts;

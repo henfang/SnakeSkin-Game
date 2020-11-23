@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public partial class Player
@@ -24,7 +25,7 @@ public partial class Player
             //Makes player flash
             if (model.transform.localScale == baseScale)
             {
-                SetModelScale(Vector3.zero);
+                SetModelScale(invincibleScale);
             }
             else
             {
