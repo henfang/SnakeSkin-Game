@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 2646106169765334753}
   m_Layer: 0
   m_Name: Gunslinger
-  m_TagString: Enemy
+  m_TagString: GunSlinger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

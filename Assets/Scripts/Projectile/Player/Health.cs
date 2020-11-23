@@ -39,8 +39,7 @@ public partial class Player
         //If the player runs out of hearts send them back to spawn with full health
         if (currentHearts <= 0)
         {
-            currentHearts = totalHearts;
-            Respawn();
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 

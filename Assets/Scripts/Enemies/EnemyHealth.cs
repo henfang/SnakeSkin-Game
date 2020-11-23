@@ -14,7 +14,23 @@ public partial class EnemyCollision
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
-            killManager.UpdateBanditKills();
+            if (gameObject.tag == "Bandit") 
+            { 
+                killManager.UpdateBanditKills();
+            }
+            else if (gameObject.tag == "GunSlinger")
+            {
+                killManager.UpdateGSKills();
+            }
+            else if (gameObject.tag == "Snake")
+            {
+                killManager.UpdateSnakeKills();
+            }
+            else if (gameObject.tag == "Scorpion")
+            {
+                killManager.UpdateScorpionKills();
+            }
+
         }
     }
 

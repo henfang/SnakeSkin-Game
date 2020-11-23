@@ -16,11 +16,14 @@ TagManager:
   - EnvironmentSpawnPoint
   - Fireball
   - Enemy
-  - Score
   - EnemySpawnPoint
   - Enemies
   - KillManager
   - BossSpawnPoint
+  - Bandit
+  - GunSlinger
+  - Scorpion
+  - Snake
   layers:
   - Default
   - TransparentFX

@@ -160,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8393215052889049355, guid: 071f41d4e44831742adbb55d18bf6f2d, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 8393215052889049355, guid: 071f41d4e44831742adbb55d18bf6f2d, type: 3}
       propertyPath: m_Layer

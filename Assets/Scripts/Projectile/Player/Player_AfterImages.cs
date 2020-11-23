@@ -15,7 +15,7 @@ public class Player_AfterImages : MonoBehaviour
     private void OnEnable()
     {
         sr = GetComponent<SpriteRenderer>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = FindObjectOfType<Player>().transform;
 
         alpha = alphaSet;
 
