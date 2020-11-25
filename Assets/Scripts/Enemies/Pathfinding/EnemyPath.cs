@@ -69,7 +69,7 @@ public class EnemyPath : MonoBehaviour
             if (direction.x != 0 || direction.y != 0)
             {
                 //Animate bandit while chasing player
-                banditAnimate(direction);
+                EnemyAnimate(direction);
             }
             else
             {
@@ -95,7 +95,7 @@ public class EnemyPath : MonoBehaviour
         }
     }
     
-    void banditAnimate(Vector2 dir) 
+    void EnemyAnimate(Vector2 dir) 
     {
         anim.SetLayerWeight(1, 1);
 
