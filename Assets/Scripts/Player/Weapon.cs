@@ -19,6 +19,7 @@ public class Weapon : MonoBehaviour
         {
             if (Time.time >= shotTime)
             {
+                SoundManager.PlaySound("playerAttack");
                 Instantiate(projectile, shotPoint.position, transform.rotation);
                 shotTime = Time.time + timeBetweenShots;
             }

@@ -6,6 +6,9 @@ public partial class Player
 {
     public void GetHurt()
     {
+        // Play sound
+        SoundManager.PlaySound("damage");
+
         //If the player is invincible they won't take damage
         if (isInvincible) return;
 

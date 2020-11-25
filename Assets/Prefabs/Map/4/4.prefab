@@ -84,6 +84,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 2
+  waitTime: 4
+  map_size_limit: 7
 --- !u!61 &5546598767684676308
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -236,7 +238,7 @@ GameObject:
   - component: {fileID: 1435624683228437740}
   m_Layer: 8
   m_Name: RoomWall (9)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -412,6 +414,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 2
+  waitTime: 4
+  map_size_limit: 7
 --- !u!61 &7771791322411775395
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -505,6 +509,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 2
+  waitTime: 4
+  map_size_limit: 7
 --- !u!61 &6329784945313563004
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -565,7 +571,7 @@ GameObject:
   - component: {fileID: 1800568223302953961}
   m_Layer: 8
   m_Name: RoomWall (21)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -674,7 +680,7 @@ GameObject:
   - component: {fileID: 4724883961358742081}
   m_Layer: 8
   m_Name: RoomWall (10)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -816,6 +822,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 2
+  waitTime: 4
+  map_size_limit: 7
 --- !u!61 &8485894627254755880
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -876,7 +884,7 @@ GameObject:
   - component: {fileID: 5258480240169486173}
   m_Layer: 8
   m_Name: RoomWall (22)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1018,6 +1026,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 3
+  waitTime: 4
+  map_size_limit: 7
 --- !u!61 &71182791329886323
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1111,6 +1121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 1
+  waitTime: 4
+  map_size_limit: 7
 --- !u!61 &8297157761438990639
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1171,7 +1183,7 @@ GameObject:
   - component: {fileID: 2873494699256580153}
   m_Layer: 8
   m_Name: RoomWall
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1280,7 +1292,7 @@ GameObject:
   - component: {fileID: 6082107292204319125}
   m_Layer: 8
   m_Name: RoomWall (15)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1490,6 +1502,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 4
+  waitTime: 4
+  map_size_limit: 7
 --- !u!61 &3226305033348661934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1550,7 +1564,7 @@ GameObject:
   - component: {fileID: 4586180320297823705}
   m_Layer: 8
   m_Name: RoomWall (4)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1659,7 +1673,7 @@ GameObject:
   - component: {fileID: 4234661659671460967}
   m_Layer: 8
   m_Name: RoomWall (16)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1801,6 +1815,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 2
+  waitTime: 4
+  map_size_limit: 7
 --- !u!61 &1475752052764009054
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -373,6 +373,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 4
+  waitTime: 4
+  map_size_limit: 7
 --- !u!61 &1409728148236514082
 BoxCollider2D:
   m_ObjectHideFlags: 0

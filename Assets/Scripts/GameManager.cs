@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        Destroy(GameObject.Find("DontDestroyOnLoad"));
         SceneManager.LoadScene("SampleScene");
     }
 

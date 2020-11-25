@@ -13,6 +13,7 @@ public partial class EnemyCollision
         //If an enemy runs out of health destroy them
         if (currentHealth <= 0)
         {
+            SoundManager.PlaySound("enemyDeath");
             Destroy(gameObject);
             if (gameObject.tag == "Bandit") 
             { 
@@ -36,6 +37,7 @@ public partial class EnemyCollision
 
     public void EnemyDamage()
     {
+        SoundManager.PlaySound("damage");
         currentHealth -= 1;
     }
 }
