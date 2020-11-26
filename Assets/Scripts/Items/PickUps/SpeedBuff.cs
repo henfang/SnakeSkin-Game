@@ -3,7 +3,7 @@
 public class SpeedBuff : MonoBehaviour
 {
     [Range(0, 20)]
-    public float speedBuff;
+    public float speedBuff = 2;
 
     GameObject inventory;
 
