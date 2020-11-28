@@ -50,11 +50,12 @@ public class InvUI : MonoBehaviour
         int row = 0;        // used for limiting the number of cells a row can have 
         int col = 0;        // used for limiting the number of rows in the inventory
         int xPos = 40;      // starting location of the first cell in the canvas
-        int yPos = -50;     // starting location of the first cell in the canvas
-        int spacing = 130;   // space between each cell in the (x) and (y) direction
+        int yPos = -30;     // starting location of the first cell in the canvas
+        int spacing = 10;  // space between each cell in the (x) and (y) direction
+        float scale = .3f;  // scale for the items in the inventory 
 
         int cells = 4;              // for easier adjustment of the number of cells 
-        float itemCellSize = 80f;   // size of each cell
+        float itemCellSize = 40f;   // size of each cell
         int imageSize = 10;
 
         foreach (Item item in inventory.GetItems())
@@ -63,7 +64,8 @@ public class InvUI : MonoBehaviour
             // Then set its position in the canvas
             RectTransform newItem = Instantiate(itemTemplate, slotContainer).GetComponent<RectTransform>();
             newItem.gameObject.SetActive(true);
-            newItem.anchoredPosition = new Vector2(xPos + (row * (itemCellSize + spacing)), yPos - (col * (itemCellSize + spacing)));
+            newItem.anchoredPosition = new Vector2(xPos + (row * (itemCellSize + spacing)), yPos - (col * (itemCellSize + (spacing - (spacing * 1/5)))));
+            newItem.localScale = new Vector2(scale, scale);
 
             // Create a child to hold the image of the item that will be displayed in the inventory slot
             Image image = newItem.Find("Image").GetComponent<Image>();
