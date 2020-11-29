@@ -21,6 +21,8 @@ public partial class Player : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
+    public Loading loadCheck;
+
     Rigidbody2D rb;
     Animator anim;
 
@@ -30,19 +32,21 @@ public partial class Player : MonoBehaviour
         setInventory();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        loadCheck = GameObject.FindObjectOfType<Loading>();
     }
 
     void Update()
     {
-        // Handle movement depending on keyboard inputs
-        Move(moveInput);
+        if (loadCheck.Loaded) {
+            // Handle movement depending on keyboard inputs
+            Move(moveInput);
 
-        // Handle inventory 
-        toggleInventory();
+            // Handle inventory 
+            toggleInventory();
 
-        //Create the health bar
-        DrawHealthBar();
-
+            //Create the health bar
+            DrawHealthBar();
+        }
     }
 
     void FixedUpdate()

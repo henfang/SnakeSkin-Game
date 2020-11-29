@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class KillManager : MonoBehaviour
 {
+    public Loading loadCheck;
+
     public Text banditKillText;
     public Text gsKillText;
     public int targetBanditKills;
@@ -32,6 +34,9 @@ public class KillManager : MonoBehaviour
         gunSlingers = GameObject.FindGameObjectsWithTag("GunSlinger");
         targetGunSlingerKills = gunSlingers.Length / 2;
         gsKillText.text = "GunSlingers Killed: 0/" + targetGunSlingerKills.ToString();
+        loadCheck = GameObject.FindObjectOfType<Loading>();
+        loadCheck.doneLoading();
+
     }
 
     private void Update()

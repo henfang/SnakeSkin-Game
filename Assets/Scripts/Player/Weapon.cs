@@ -4,9 +4,15 @@ public class Weapon : MonoBehaviour
 {
     public GameObject projectile;
     public Transform shotPoint;
+    public Loading loadCheck;
 
     public float timeBetweenShots;
     private float shotTime;
+
+    void Start()
+    {
+        loadCheck = GameObject.FindObjectOfType<Loading>();
+    }
 
     void Update()
     {
@@ -17,11 +23,14 @@ public class Weapon : MonoBehaviour
 
         if (Input.GetMouseButton(0))
         {
-            if (Time.time >= shotTime)
+            if (loadCheck.Loaded)
             {
-                SoundManager.PlaySound("playerAttack");
-                Instantiate(projectile, shotPoint.position, transform.rotation);
-                shotTime = Time.time + timeBetweenShots;
+                if (Time.time >= shotTime)
+                {
+                    SoundManager.PlaySound("playerAttack");
+                    Instantiate(projectile, shotPoint.position, transform.rotation);
+                    shotTime = Time.time + timeBetweenShots;
+                }
             }
         }
     }
