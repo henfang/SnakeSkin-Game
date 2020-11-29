@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1328291319309709356}
   - component: {fileID: 5536729633054181360}
   - component: {fileID: 6438098190221263590}
+  - component: {fileID: 6250016724665802234}
   m_Layer: 5
   m_Name: itemTemplate
   m_TagString: InventorySlot
@@ -28,7 +29,7 @@ RectTransform:
   m_GameObject: {fileID: 1697087093886809016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 3526593562079158285}
   - {fileID: 5715009481421791141}
@@ -121,6 +122,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6250016724665802234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697087093886809016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 7, y: -7}
+  m_UseGraphicAlpha: 1
 --- !u!1 &6347769876872289881
 GameObject:
   m_ObjectHideFlags: 0
