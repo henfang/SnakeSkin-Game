@@ -14,4 +14,9 @@ public class ObjectTemplates : MonoBehaviour
 
     // PowerUp objects that can spawn in the room
     public GameObject[] powerUpObjects;
+
+    public GameObject bossNDoor;
+    public GameObject bossSDoor;
+    public GameObject bossEWDoor;
+
 }

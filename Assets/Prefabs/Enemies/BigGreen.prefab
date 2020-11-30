@@ -16,10 +16,9 @@ GameObject:
   - component: {fileID: -2287767468529798450}
   - component: {fileID: -4000014026796536059}
   - component: {fileID: 3755834485535330061}
-  - component: {fileID: -3220629516715376624}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: BigGreen
-  m_TagString: Boss
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,8 +33,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.18, y: 0.76, z: -0.77005047}
   m_LocalScale: {x: 0.38711467, y: 0.4330386, z: 1}
-  m_Children:
-  - {fileID: 7586314716229483904}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -76,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 910060187
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7866198723424170882, guid: e8704afa99a55c7409e8620ed461be3b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -196,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ded24700f2f4c2d809786010548bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 250
+  speed: 300
   enemyRadius: 6
 --- !u!114 &3755834485535330061
 MonoBehaviour:
@@ -210,51 +208,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f5b0f3834bda114c912062f4405c9e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 4
-  totalHealth: 4
---- !u!114 &-3220629516715376624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959382003104593068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aafcf7e840120944cab7906dffcc4706, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  direction: {x: 0, y: 0}
-  bullet: {fileID: 3874457359638183965, guid: 09ae082707a2649a691b084268c51ba9, type: 3}
-  firePoint: {fileID: 7586314716229483904}
-  timeBetweenShots: 1
---- !u!1 &5738350473465563998
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7586314716229483904}
-  m_Layer: 9
-  m_Name: firePoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7586314716229483904
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5738350473465563998}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 10}
-  m_Children: []
-  m_Father: {fileID: 1959382003104593057}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  currentHealth: 20
+  totalHealth: 20

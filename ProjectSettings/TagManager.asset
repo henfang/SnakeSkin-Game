@@ -27,6 +27,7 @@ TagManager:
   - Obstacle
   - Bullet
   - Boss
+  - DoorSpawnPoint
   layers:
   - Default
   - TransparentFX
@@ -70,6 +71,15 @@ TagManager:
   - name: Environment
     uniqueID: 2918397517
     locked: 0
+  - name: Enemy
+    uniqueID: 910060187
+    locked: 0
   - name: Player
     uniqueID: 400368739
+    locked: 0
+  - name: EnvironmentInFront
+    uniqueID: 3063997717
+    locked: 0
+  - name: Walls
+    uniqueID: 3272124945
     locked: 0

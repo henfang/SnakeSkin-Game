@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static AudioClip damageSound, playerAttackSound, enemyDeathSound;
+    public static AudioClip damageSound, playerAttackSound, enemyDeathSound, playerMoveSound, bossSpawnSound;
     static AudioSource audioSource;
 
     private void Start()
@@ -12,6 +12,8 @@ public class SoundManager : MonoBehaviour
         damageSound = Resources.Load<AudioClip>("Bloody punch");
         playerAttackSound = Resources.Load<AudioClip>("Magic Spell_Simple Swoosh_6");
         enemyDeathSound = Resources.Load<AudioClip>("Indiana Jones Punch");
+        playerMoveSound = Resources.Load<AudioClip>("Sand Footstep new 3");
+        bossSpawnSound = Resources.Load<AudioClip>("Metal Impact 7");
 
         audioSource = GetComponent<AudioSource>();
     }
@@ -28,6 +30,12 @@ public class SoundManager : MonoBehaviour
                 break;
             case "enemyDeath":
                 audioSource.PlayOneShot(playerAttackSound);
+                break;
+            case "playerMove":
+                audioSource.PlayOneShot(playerMoveSound);
+                break;
+            case "bossSpawn":
+                audioSource.PlayOneShot(bossSpawnSound);
                 break;
         }
     }

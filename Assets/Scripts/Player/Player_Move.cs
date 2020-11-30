@@ -9,7 +9,7 @@ public partial class Player
     void Move(Vector2 moveInput)
     {
         update_Move_Input();
-        
+
         // Check if player is dashing, and spawn clones for after images
         dashing();
         spawnClones(); 

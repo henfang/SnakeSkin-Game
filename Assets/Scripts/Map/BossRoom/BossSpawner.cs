@@ -11,11 +11,13 @@ public class BossSpawner : MonoBehaviour
     private KillManager killManager;
 
     // Have we spawned a boss or not
-    private bool spawnedBoss = false;
+    public bool spawnedBoss = false;
     // What boss to spawn
     public GameObject boss;
     // Minimum time to wait before spawning boss
     public float waitTime = 10.0f;
+
+
 
     void Start()
     {
@@ -23,14 +25,18 @@ public class BossSpawner : MonoBehaviour
         killManager = GameObject.FindGameObjectWithTag("KillManager").GetComponent<KillManager>();
     }
 
-
-    void Update()
+    private void Update()
+    {
+        waitTime -= Time.deltaTime;
+    }
+    public void SpawnBoss()
     {
         if (waitTime <= 0 && !spawnedBoss && killManager.KillGoalReached())
         {
             Instantiate(boss, GameObject.FindGameObjectWithTag("BossSpawnPoint").transform.position, Quaternion.identity);
             spawnedBoss = true;
         }
-        waitTime -= Time.deltaTime;
     }
+
+
 }

@@ -6,7 +6,7 @@ public class Cactus : MonoBehaviour
 {
     IEnumerator Start()
     {
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(5);
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
