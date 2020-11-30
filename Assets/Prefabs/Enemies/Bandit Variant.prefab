@@ -21,7 +21,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &7951248258761351793
+--- !u!70 &626071794522216036
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35,7 +35,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2.9, y: 4.7}
+  m_Size: {x: 2.8, y: 4.2}
   m_Direction: 0
 --- !u!114 &719122621
 MonoBehaviour:
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 200
-  enemyRadius: 6
+  enemyRadius: 5
 --- !u!114 &6027178932921333509
 MonoBehaviour:
   m_ObjectHideFlags: 0

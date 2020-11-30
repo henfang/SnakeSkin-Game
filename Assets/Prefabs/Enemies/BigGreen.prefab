@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ded24700f2f4c2d809786010548bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 200
+  speed: 250
   enemyRadius: 6
 --- !u!114 &3755834485535330061
 MonoBehaviour:

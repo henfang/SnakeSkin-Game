@@ -102,4 +102,11 @@ public class BanditScript : MonoBehaviour
         anim.SetFloat("x", dir.x);
         anim.SetFloat("y", dir.y);
     }
+
+    void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.tag == "Obstacle") {
+             rigidbody.AddForce(-direction * 1.5f, ForceMode2D.Impulse);
+        }
+        
+    }
 }

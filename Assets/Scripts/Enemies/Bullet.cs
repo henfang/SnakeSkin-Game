@@ -5,18 +5,22 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     private Transform target;
-    private Vector2 targetPosition;
-    private Vector3 directionToGo;
+    private Vector3 targetPosition;
+    public float speed = 4f;
+    private Vector2 direction; 
 
     void Start() {
         target = GameObject.FindWithTag("Player").GetComponent<Transform>();
         targetPosition = target.position;
-        directionToGo = (target.position - transform.position).normalized;
+        direction = (targetPosition - transform.position);
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Quaternion rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+        transform.rotation = rotation;
     }
 
     void FixedUpdate () 
-     {   
-        transform.position += directionToGo * 10 * Time.deltaTime;
+     {  
+         transform.Translate(Vector2.up * speed * Time.deltaTime);
      }
 
      void OnCollisionEnter2D(Collision2D collision)
