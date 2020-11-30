@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 public partial class Player : MonoBehaviour
@@ -33,11 +34,13 @@ public partial class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         loadCheck = GameObject.FindObjectOfType<Loading>();
+        StartCoroutine("fixStartingPosition");
     }
 
     void Update()
     {
-        if (loadCheck.Loaded) {
+        if (loadCheck.Loaded)
+        {
             // Handle movement depending on keyboard inputs
             Move(moveInput);
 
@@ -53,12 +56,12 @@ public partial class Player : MonoBehaviour
     {
         updatePosition();
 
-        if (moveInput.x != 0 || moveInput.y != 0) 
+        if (moveInput.x != 0 || moveInput.y != 0)
         {
             //Animate player while moving
             Animate(moveInput);
         }
-        else 
+        else
         {
             //If not moving set to idle
             anim.SetLayerWeight(1, 0);
@@ -73,5 +76,11 @@ public partial class Player : MonoBehaviour
     public void Respawn()
     {
         transform.position = startLocation.position;
+    }
+
+    IEnumerator fixStartingPosition()
+    {
+        yield return new WaitForSeconds(2f);
+        transform.position = new Vector3(0, 0, 0);
     }
 }
