@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 6705922747856911823, guid: def7d9cdc6b52c843b30b397f14b6206, type: 3}
   shotPoint: {fileID: 4613827797922702377}
+  loadCheck: {fileID: 0}
   timeBetweenShots: 0.5
 --- !u!1 &4613827797575289593
 GameObject:
@@ -29,6 +30,7 @@ GameObject:
   - component: {fileID: 4613827797575289594}
   - component: {fileID: 4613827797575289598}
   - component: {fileID: 5701875097588995648}
+  - component: {fileID: -2208592855168222375}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -86,12 +88,14 @@ MonoBehaviour:
   invincibleDeltaTime: 0.15
   model: {fileID: 4613827797575289593}
   baseScale: {x: 0.2, y: 0.2, z: 0}
+  invincibleScale: {x: 0.001, y: 0.001, z: 0}
   startLocation: {fileID: 0}
   currentHearts: 0
   totalHearts: 0
   hearts: []
   fullHeart: {fileID: 0}
   emptyHeart: {fileID: 0}
+  loadCheck: {fileID: 0}
   dashAmount: 10
   dashCoolDown: 3
   distanceBetweenImages: 0
@@ -195,6 +199,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2208592855168222375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4613827797575289593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dc601538fe154e92b9a42a8cbbaa245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4613827797922702376
 GameObject:
   m_ObjectHideFlags: 0

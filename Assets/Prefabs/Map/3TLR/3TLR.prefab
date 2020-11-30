@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 997979015479299119}
   m_Layer: 8
   m_Name: RoomWall (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 6224694696865107985}
   m_Layer: 8
   m_Name: RoomWall (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -298,6 +298,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 4
+  waitTime: 4
+  map_size_limit: 7
 --- !u!61 &6977571085347093932
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -391,6 +393,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 2
+  waitTime: 4
+  map_size_limit: 7
 --- !u!61 &5943993120584637733
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -451,7 +455,7 @@ GameObject:
   - component: {fileID: 1048886686928169321}
   m_Layer: 8
   m_Name: RoomWall (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -560,7 +564,7 @@ GameObject:
   - component: {fileID: 6398906777229889352}
   m_Layer: 8
   m_Name: RoomWall
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -669,7 +673,7 @@ GameObject:
   - component: {fileID: 5313656694642903156}
   m_Layer: 8
   m_Name: RoomWall (22)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -815,7 +819,7 @@ GameObject:
   - component: {fileID: 7567274290386419369}
   m_Layer: 8
   m_Name: RoomWall (23)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -924,7 +928,7 @@ GameObject:
   - component: {fileID: 6152841375756965189}
   m_Layer: 8
   m_Name: RoomWall (12)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1066,6 +1070,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 1
+  waitTime: 4
+  map_size_limit: 7
 --- !u!61 &169253061320805455
 BoxCollider2D:
   m_ObjectHideFlags: 0

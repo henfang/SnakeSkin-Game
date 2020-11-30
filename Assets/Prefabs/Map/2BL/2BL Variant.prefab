@@ -972,6 +972,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1990574232820347087, guid: 690db59ce3767d948af1efb751b4f5df, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2819915930669165814, guid: 690db59ce3767d948af1efb751b4f5df, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605167628995592637, guid: 690db59ce3767d948af1efb751b4f5df, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4544481408383294863, guid: 690db59ce3767d948af1efb751b4f5df, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1020,16 +1032,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: 2BL Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5360939633769722550, guid: 690db59ce3767d948af1efb751b4f5df, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6361395193165315766, guid: 690db59ce3767d948af1efb751b4f5df, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8096912294047931995, guid: 690db59ce3767d948af1efb751b4f5df, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 690db59ce3767d948af1efb751b4f5df, type: 3}
---- !u!1 &2346291775056547805 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5183982074545283758, guid: 690db59ce3767d948af1efb751b4f5df, type: 3}
-  m_PrefabInstance: {fileID: 7457547339807927667}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6372516542749651196 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4544481408383294863, guid: 690db59ce3767d948af1efb751b4f5df, type: 3}
+  m_PrefabInstance: {fileID: 7457547339807927667}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2346291775056547805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5183982074545283758, guid: 690db59ce3767d948af1efb751b4f5df, type: 3}
   m_PrefabInstance: {fileID: 7457547339807927667}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8442583409708460320

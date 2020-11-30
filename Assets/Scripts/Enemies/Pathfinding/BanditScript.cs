@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Pathfinding;
 
-public class EnemyPath : MonoBehaviour
+public class BanditScript : MonoBehaviour
 {
     private Transform target;
     public float speed = 200;

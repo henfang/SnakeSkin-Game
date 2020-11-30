@@ -24,6 +24,8 @@ TagManager:
   - GunSlinger
   - Scorpion
   - Snake
+  - Obstacle
+  - Bullet
   layers:
   - Default
   - TransparentFX

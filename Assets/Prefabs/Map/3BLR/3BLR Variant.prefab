@@ -721,6 +721,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3BLR Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 912076827062210025, guid: cf27e972059a050459f189d9928b5838, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3835730390831497712, guid: cf27e972059a050459f189d9928b5838, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3868155542338068249, guid: cf27e972059a050459f189d9928b5838, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7057107227043206057, guid: cf27e972059a050459f189d9928b5838, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061155596357381530, guid: cf27e972059a050459f189d9928b5838, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8333014201416036266, guid: cf27e972059a050459f189d9928b5838, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8414302868336918242, guid: cf27e972059a050459f189d9928b5838, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8781041774564811472, guid: cf27e972059a050459f189d9928b5838, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

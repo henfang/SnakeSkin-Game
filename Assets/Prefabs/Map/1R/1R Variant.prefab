@@ -1759,6 +1759,26 @@ PrefabInstance:
       propertyPath: m_TagString
       value: IsRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 1896148950037628815, guid: f58bdb5a3a52d614e85866dfe30181de, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336129641337154402, guid: f58bdb5a3a52d614e85866dfe30181de, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2681365755620167776, guid: f58bdb5a3a52d614e85866dfe30181de, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430886833417459340, guid: f58bdb5a3a52d614e85866dfe30181de, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303976725101258188, guid: f58bdb5a3a52d614e85866dfe30181de, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8008709236619782326, guid: f58bdb5a3a52d614e85866dfe30181de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20

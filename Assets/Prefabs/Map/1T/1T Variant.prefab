@@ -1592,6 +1592,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1297896841821246219, guid: 9ebe67c5c9d1272498cfe8e490fcff7c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510519717704976637, guid: 9ebe67c5c9d1272498cfe8e490fcff7c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2739526932477955850, guid: 9ebe67c5c9d1272498cfe8e490fcff7c, type: 3}
       propertyPath: m_Name
       value: 1T Variant
@@ -1599,6 +1607,18 @@ PrefabInstance:
     - target: {fileID: 2739526932477955850, guid: 9ebe67c5c9d1272498cfe8e490fcff7c, type: 3}
       propertyPath: m_TagString
       value: IsRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 3139034436824030994, guid: 9ebe67c5c9d1272498cfe8e490fcff7c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340928680146780247, guid: 9ebe67c5c9d1272498cfe8e490fcff7c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052228608409234457, guid: 9ebe67c5c9d1272498cfe8e490fcff7c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6837810872064733227, guid: 9ebe67c5c9d1272498cfe8e490fcff7c, type: 3}
       propertyPath: m_LocalPosition.x

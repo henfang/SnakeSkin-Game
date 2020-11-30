@@ -954,16 +954,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 758936412806484376, guid: 13fafc3ed20d5304fb5300ff4341e84a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 762243802193981816, guid: 13fafc3ed20d5304fb5300ff4341e84a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619924001040574431, guid: 13fafc3ed20d5304fb5300ff4341e84a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3911827247059847937, guid: 13fafc3ed20d5304fb5300ff4341e84a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954714489935143115, guid: 13fafc3ed20d5304fb5300ff4341e84a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6212034422182579066, guid: 13fafc3ed20d5304fb5300ff4341e84a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13fafc3ed20d5304fb5300ff4341e84a, type: 3}
---- !u!1 &6837372734093853693 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 197991864714750105, guid: 13fafc3ed20d5304fb5300ff4341e84a, type: 3}
-  m_PrefabInstance: {fileID: 6655285384804985700}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6065431562333023523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 608248824953767495, guid: 13fafc3ed20d5304fb5300ff4341e84a, type: 3}
+  m_PrefabInstance: {fileID: 6655285384804985700}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6837372734093853693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 197991864714750105, guid: 13fafc3ed20d5304fb5300ff4341e84a, type: 3}
   m_PrefabInstance: {fileID: 6655285384804985700}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6902836076112493302

@@ -595,6 +595,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 839939040985161526, guid: 001247166ce9c8641b3a0306611be33c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 963049009377379520, guid: 001247166ce9c8641b3a0306611be33c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077933030379447348, guid: 001247166ce9c8641b3a0306611be33c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342317980494592360, guid: 001247166ce9c8641b3a0306611be33c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805109052174567641, guid: 001247166ce9c8641b3a0306611be33c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4132792145517385921, guid: 001247166ce9c8641b3a0306611be33c, type: 3}
       propertyPath: m_Name
       value: 3TBR Variant
@@ -642,6 +662,14 @@ PrefabInstance:
     - target: {fileID: 4736284287443707872, guid: 001247166ce9c8641b3a0306611be33c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5459206947433982618, guid: 001247166ce9c8641b3a0306611be33c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522455960231099346, guid: 001247166ce9c8641b3a0306611be33c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 001247166ce9c8641b3a0306611be33c, type: 3}

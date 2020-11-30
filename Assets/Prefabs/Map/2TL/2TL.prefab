@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 1
+  waitTime: 4
+  map_size_limit: 7
 --- !u!61 &2296743201720891911
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -139,7 +141,7 @@ GameObject:
   - component: {fileID: 4061891812528411064}
   m_Layer: 8
   m_Name: RoomWall (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -248,7 +250,7 @@ GameObject:
   - component: {fileID: 2565901098841129425}
   m_Layer: 8
   m_Name: RoomWall (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -357,7 +359,7 @@ GameObject:
   - component: {fileID: 6294065636835557919}
   m_Layer: 8
   m_Name: RoomWall (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -466,7 +468,7 @@ GameObject:
   - component: {fileID: 968909334289591321}
   m_Layer: 8
   m_Name: RoomWall
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -575,7 +577,7 @@ GameObject:
   - component: {fileID: 2430946653690754812}
   m_Layer: 8
   m_Name: RoomWall (14)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -717,6 +719,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 4
+  waitTime: 4
+  map_size_limit: 7
 --- !u!61 &3955888551933406825
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -777,7 +781,7 @@ GameObject:
   - component: {fileID: 8246656944975788835}
   m_Layer: 8
   m_Name: RoomWall (15)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

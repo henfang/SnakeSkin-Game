@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6755787380514956008}
   - component: {fileID: -4385050451748655296}
   - component: {fileID: -136848479149865421}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: IsRoom
   m_Icon: {fileID: 0}
