@@ -7,6 +7,7 @@ public partial class EnemyCollision
 {
     public int currentHealth;
     public int totalHealth;
+    public int damage = 1;
 
     void DrawEnemyHealthBar()
     {
@@ -14,7 +15,6 @@ public partial class EnemyCollision
         if (currentHealth <= 0)
         {
             SoundManager.PlaySound("enemyDeath");
-            Destroy(gameObject);
             if (gameObject.tag == "Bandit") 
             { 
                 killManager.UpdateBanditKills();
@@ -31,13 +31,18 @@ public partial class EnemyCollision
             {
                 killManager.UpdateScorpionKills();
             }
-
+            else if (gameObject.tag == "BigGreen")
+            {
+                Debug.Log("123");
+                FindObjectOfType<GameManager>().WinScreen();
+            }
+            Destroy(gameObject);
         }
     }
 
     public void EnemyDamage()
     {
         SoundManager.PlaySound("damage");
-        currentHealth -= 1;
+        currentHealth -= damage;
     }
 }

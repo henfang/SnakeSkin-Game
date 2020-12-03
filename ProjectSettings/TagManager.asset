@@ -28,6 +28,7 @@ TagManager:
   - Bullet
   - Boss
   - DoorSpawnPoint
+  - BigGreen
   layers:
   - Default
   - TransparentFX

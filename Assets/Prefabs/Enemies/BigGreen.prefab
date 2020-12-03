@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 3755834485535330061}
   m_Layer: 0
   m_Name: BigGreen
-  m_TagString: Untagged
+  m_TagString: BigGreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,3 +210,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 20
   totalHealth: 20
+  damage: 1
