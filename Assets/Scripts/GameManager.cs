@@ -6,11 +6,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private LevelPasser levelPasser;
-
-    private void Start()
-    {
-        levelPasser = GameObject.FindObjectOfType<LevelPasser>();
-    }
     public void EndGame()
     {
         SceneManager.LoadScene("GameOver");
@@ -18,12 +13,14 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
+        levelPasser = GameObject.FindObjectOfType<LevelPasser>();
         levelPasser.resetFloor();
         SceneManager.LoadScene("SampleScene");
     }
 
     public void ReturnToMenu()
     {
+        levelPasser = GameObject.FindObjectOfType<LevelPasser>();
         levelPasser.resetFloor();
         SceneManager.LoadScene("MainMenu");
     }
@@ -45,6 +42,7 @@ public class GameManager : MonoBehaviour
 
     public void NextLevel()
     {
+        levelPasser = GameObject.FindObjectOfType<LevelPasser>();
         levelPasser.incrementFloor();
         SceneManager.LoadScene("SampleScene");
     }
