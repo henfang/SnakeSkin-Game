@@ -31,7 +31,7 @@ GameObject:
   - component: {fileID: 4613827797575289598}
   - component: {fileID: -2208592855168222375}
   - component: {fileID: 1416116099}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 400368739
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6329748858867364475, guid: 64864f4c217a3f943a46d020a4128719, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -230,7 +230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4613827797922702377}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: shotPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,9 +338,21 @@ PrefabInstance:
       propertyPath: m_SpriteSortPoint
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4525382691706896802, guid: 4c2cb5cb6f423b04fbecc2fa99d0494d, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6412423369941016989, guid: 4c2cb5cb6f423b04fbecc2fa99d0494d, type: 3}
       propertyPath: m_Name
       value: weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412423369941016989, guid: 4c2cb5cb6f423b04fbecc2fa99d0494d, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545248472831570419, guid: 4c2cb5cb6f423b04fbecc2fa99d0494d, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8519744711044328238, guid: 4c2cb5cb6f423b04fbecc2fa99d0494d, type: 3}
       propertyPath: m_LocalPosition.y

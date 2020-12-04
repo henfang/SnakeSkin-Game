@@ -83,4 +83,8 @@ public partial class Player : MonoBehaviour
         yield return new WaitForSeconds(2f);
         transform.position = new Vector3(0, 0, 0);
     }
+
+    void OnParticleCollision(GameObject other) {
+        GetHurt();
+    }
 }
