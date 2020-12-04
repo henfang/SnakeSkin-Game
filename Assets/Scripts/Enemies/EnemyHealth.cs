@@ -9,6 +9,9 @@ public partial class EnemyCollision
     public int totalHealth;
     public int damage = 1;
 
+    public GameObject powerUp;
+    private int rand;
+
     void DrawEnemyHealthBar()
     {
         //If an enemy runs out of health destroy them
@@ -37,6 +40,13 @@ public partial class EnemyCollision
                 FindObjectOfType<GameManager>().WinScreen();
             }
             Destroy(gameObject);
+
+            // 40% chance of spawning a power up on death of enemy
+            rand = Random.Range(1, 10);
+            if (rand <= 4)
+            {
+                Instantiate(powerUp, transform.position, transform.rotation);
+            }
         }
     }
 

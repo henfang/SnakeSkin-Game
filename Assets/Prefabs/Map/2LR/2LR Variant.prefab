@@ -50,77 +50,6 @@ Transform:
   m_Father: {fileID: 1580638339764976148}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6764550412432689191
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1478649336772128171}
-  - component: {fileID: 577608428376094233}
-  - component: {fileID: 1523655273874062684}
-  m_Layer: 0
-  m_Name: PowerUp Spawn Point
-  m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1478649336772128171
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6764550412432689191}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.57, y: -0.78, z: -4.619415}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1170937675027935235}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &577608428376094233
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6764550412432689191}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &1523655273874062684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6764550412432689191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 676efcd45a5000045b1935c815ef6c3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemID: 5
 --- !u!1 &6987703491917382826
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,37 +119,6 @@ Transform:
   - {fileID: 4798533408444281673}
   m_Father: {fileID: 1580638339764976148}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8043275382943242906
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1170937675027935235}
-  m_Layer: 0
-  m_Name: PowerUp Spawn Point
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1170937675027935235
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8043275382943242906}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0744531, y: 1.27697, z: -0.9739119}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1478649336772128171}
-  m_Father: {fileID: 1580638339764976148}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &357956385251807613
 PrefabInstance:
@@ -923,14 +821,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76cd1b1b33845b142aceb4e8e5372b66, type: 3}
---- !u!4 &1580638339764976148 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6047924087349535122, guid: 76cd1b1b33845b142aceb4e8e5372b66, type: 3}
-  m_PrefabInstance: {fileID: 5044318383641893766}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7858649178321438005 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3102561308763053747, guid: 76cd1b1b33845b142aceb4e8e5372b66, type: 3}
+  m_PrefabInstance: {fileID: 5044318383641893766}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1580638339764976148 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6047924087349535122, guid: 76cd1b1b33845b142aceb4e8e5372b66, type: 3}
   m_PrefabInstance: {fileID: 5044318383641893766}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5428271160027650065

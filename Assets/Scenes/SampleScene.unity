@@ -2799,9 +2799,6 @@ MonoBehaviour:
   - {fileID: 6022366890621540264, guid: 196f4fca36e61fd4b8aa877b66c2b340, type: 3}
   - {fileID: 7951905453797918718, guid: cb1205b553d264a47a749d399338596e, type: 3}
   - {fileID: 510658041935515652, guid: da214f2cfe7eb404099555ddfbb012c1, type: 3}
-  powerUpObjects:
-  - {fileID: 8975148896459037637, guid: 7d43101f8d4e21347b724676b7f30a8d, type: 3}
-  - {fileID: 4846322799177786124, guid: 40487e036ee3cdd4d8768916377b1f98, type: 3}
   bossNDoor: {fileID: 8151585007156127644, guid: 2598af28e4ec099438ac80dc4fe294ae, type: 3}
   bossSDoor: {fileID: 5942787619304030305, guid: cd2891e525f604e49bd00bfb2186ff50, type: 3}
   bossEWDoor: {fileID: 3285125978438046473, guid: faeea7a89c756f941973543111b6235b, type: 3}

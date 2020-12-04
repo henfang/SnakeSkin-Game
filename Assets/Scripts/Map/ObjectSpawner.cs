@@ -47,14 +47,7 @@ public class ObjectSpawner : MonoBehaviour
                 rand = Random.Range(0, objectTemplates.environmentObjects.Length);
                 GameObject obj = Instantiate(objectTemplates.environmentObjects[rand], transform.position, objectTemplates.environmentObjects[rand].transform.rotation);
             }
-
-            // 50% chance of spawning a power up at each spawn point
-            if (itemID == 5 && spawnNumber <= 5)
-            {
-                rand = Random.Range(0, objectTemplates.powerUpObjects.Length);
-                GameObject obj = Instantiate(objectTemplates.powerUpObjects[rand], transform.position, objectTemplates.powerUpObjects[rand].transform.rotation);
-            }
-            
+          
 
             // Something has been spawned, remember that
             spawned = true;

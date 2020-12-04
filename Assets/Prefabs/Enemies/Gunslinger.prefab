@@ -63,7 +63,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: -1, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.1}
-  m_Children: [{fileID: 3807555112053319347}]
+  m_Children:
+  - {fileID: 3807555112053319347}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -107,8 +108,7 @@ SpriteRenderer:
   m_SortingLayerID: 910060187
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8808469773124908271, guid: 1e77e9c321a2a46f0a536d9e85b7aee7,
-    type: 3}
+  m_Sprite: {fileID: -8808469773124908271, guid: 1e77e9c321a2a46f0a536d9e85b7aee7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -201,6 +201,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 2
   totalHealth: 2
+  damage: 1
+  powerUp: {fileID: 4846322799177786124, guid: 40487e036ee3cdd4d8768916377b1f98, type: 3}
 --- !u!70 &228052028003790019
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -231,6 +233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 200
   enemyRadius: 5
+  direction: {x: 0, y: 0}
   bullet: {fileID: 3874457359638183965, guid: 09ae082707a2649a691b084268c51ba9, type: 3}
   firePoint: {fileID: 3807555112053319347}
   timeBetweenShots: 2
