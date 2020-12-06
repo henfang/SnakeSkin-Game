@@ -282,6 +282,7 @@ MonoBehaviour:
   currentHealth: 20
   totalHealth: 20
   damage: 1
+  powerUp: {fileID: 8975148896459037637, guid: 7d43101f8d4e21347b724676b7f30a8d, type: 3}
 --- !u!114 &47275920097536447
 MonoBehaviour:
   m_ObjectHideFlags: 0

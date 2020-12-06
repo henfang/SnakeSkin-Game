@@ -20,12 +20,15 @@ public class KillManager : MonoBehaviour
     private GameObject[] bandits;
     private GameObject[] gunSlingers;
 
+    public Text bossRoomMessage;
+
     IEnumerator Start()
     {
         yield return new WaitForSeconds(4f);
 
         banditKillText = GameObject.Find("BanditKillText").GetComponent<Text>();
         gsKillText = GameObject.Find("GSKillText").GetComponent<Text>();
+        bossRoomMessage = GameObject.Find("bossMessage").GetComponent<Text>();
 
         bandits = GameObject.FindGameObjectsWithTag("Bandit");
         targetBanditKills = bandits.Length / 2;
@@ -52,6 +55,10 @@ public class KillManager : MonoBehaviour
             killCounterBandits++;
         }
         banditKillText.text = "Bandits Killed: " + killCounterBandits.ToString() + "/" + targetBanditKills.ToString();
+        if (KillGoalReached())
+        {
+            bossRoomMessage.text = "Boss now available. Go to boss room.";
+        }
     }
 
     // Update number of gunslinger kills
@@ -62,6 +69,10 @@ public class KillManager : MonoBehaviour
             killCounterGunslingers++;
         }
         gsKillText.text = "GunSlingers Killed: " + killCounterGunslingers.ToString() + "/" + targetGunSlingerKills.ToString();
+        if (KillGoalReached())
+        {
+            bossRoomMessage.text = "Boss now available. Go to boss room.";
+        }
     }
 
     // Update number of snake kills
