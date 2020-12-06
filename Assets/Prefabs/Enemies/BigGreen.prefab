@@ -80,11 +80,11 @@ GameObject:
   - component: {fileID: 1959382003104593070}
   - component: {fileID: 1959382003104593071}
   - component: {fileID: 1932523071778278581}
-  - component: {fileID: 1239748391669674824}
   - component: {fileID: -2287767468529798450}
   - component: {fileID: -4000014026796536059}
   - component: {fileID: 3755834485535330061}
   - component: {fileID: 47275920097536447}
+  - component: {fileID: 6192805580858231222}
   m_Layer: 9
   m_Name: BigGreen
   m_TagString: BigGreen
@@ -194,37 +194,11 @@ Rigidbody2D:
   m_LinearDrag: 1.5
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 41cc0e1d7c9994d28b678bb5f116d767, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &1239748391669674824
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959382003104593068}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4, y: 4.7}
-    newSize: {x: 4, y: 4.7}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4, y: 4.7}
-  m_EdgeRadius: 0
 --- !u!114 &-2287767468529798450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 250
-  enemyRadius: 6
+  enemyRadius: 12
 --- !u!114 &3755834485535330061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +256,7 @@ MonoBehaviour:
   currentHealth: 20
   totalHealth: 20
   damage: 1
-  powerUp: {fileID: 8975148896459037637, guid: 7d43101f8d4e21347b724676b7f30a8d, type: 3}
+  powerUp: {fileID: 0}
 --- !u!114 &47275920097536447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,6 +285,22 @@ MonoBehaviour:
   timeBetweenShots: 1
   AoeTimer: 6
   pause: 3
+--- !u!70 &6192805580858231222
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959382003104593068}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 41cc0e1d7c9994d28b678bb5f116d767, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 3.9999998, y: 4.7}
+  m_Direction: 0
 --- !u!1 &3146009378827101243
 GameObject:
   m_ObjectHideFlags: 0
