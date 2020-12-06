@@ -45,6 +45,14 @@ public partial class Player
 
     public void Heal()
     {
-        currentHearts += 1;
+        if (currentHearts == totalHearts)
+        {
+            totalHearts += 1;
+            currentHearts = totalHearts;
+        }
+        else
+        {
+            currentHearts += 1;
+        }
     }
 }

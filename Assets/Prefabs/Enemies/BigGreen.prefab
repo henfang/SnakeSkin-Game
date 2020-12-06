@@ -253,8 +253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f5b0f3834bda114c912062f4405c9e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 20
-  totalHealth: 20
+  currentHealth: 15
+  totalHealth: 15
   damage: 1
   powerUp: {fileID: 0}
 --- !u!114 &47275920097536447
