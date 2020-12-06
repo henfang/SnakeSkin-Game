@@ -10,7 +10,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("GameOver");
     }
-
+    public void StartGame()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
     public void RestartGame()
     {
         levelPasser = GameObject.FindObjectOfType<LevelPasser>();
