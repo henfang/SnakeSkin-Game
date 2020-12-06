@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour
         levelPasser.resetFloor();
         SceneManager.LoadScene("SampleScene");
     }
+    public void CreditReturnToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 
     public void ReturnToMenu()
     {
