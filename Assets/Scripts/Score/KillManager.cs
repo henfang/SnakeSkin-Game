@@ -57,7 +57,7 @@ public class KillManager : MonoBehaviour
         banditKillText.text = "Bandits Killed: " + killCounterBandits.ToString() + "/" + targetBanditKills.ToString();
         if (KillGoalReached())
         {
-            bossRoomMessage.text = "Boss now available. Go to boss room.";
+            bossRoomMessage.text = "Boss now available. Find boss room.";
         }
     }
 
@@ -71,7 +71,7 @@ public class KillManager : MonoBehaviour
         gsKillText.text = "GunSlingers Killed: " + killCounterGunslingers.ToString() + "/" + targetGunSlingerKills.ToString();
         if (KillGoalReached())
         {
-            bossRoomMessage.text = "Boss now available. Go to boss room.";
+            bossRoomMessage.text = "Boss now available. Find boss room.";
         }
     }
 
